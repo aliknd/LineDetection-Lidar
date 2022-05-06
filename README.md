@@ -1,0 +1,2 @@
+# LineDetection-Lidar
+To detect lines, a simple approach is to use a polynomial fit of first degree, i.e., a linear fit (https://numpy.org/doc/stable/reference/generated/numpy.polyfit.html) to groups of points (for example, groups of 5 to 10 consecutive points). If two consecutive groups give you a fit that have almost the same parameters, then you can assume that both groups belong to the same line. Continue until you find a group that gives different parameters.
